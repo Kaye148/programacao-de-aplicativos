@@ -19,3 +19,7 @@ git push
 
 Mostrar branches no computador:
 git branch 
+
+## Sair 
+
+gh logout
