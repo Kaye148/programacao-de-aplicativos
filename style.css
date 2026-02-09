@@ -1,0 +1,29 @@
+/* RESET DE CONFIGURAÇÕES GERAI PARA OS NAVEGADORES. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgba(206, 81, 231, 0.514);
+    background-image: url("assets/yone-splash-art-nn.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: thistle;
+    font-size: 75px;
+    margin: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
