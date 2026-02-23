@@ -7,7 +7,7 @@
 
 body {
     background-color:rgba(206, 81, 231, 0.514);
-    background-image: url("assets/yone-splash-art-nn.jpg");
+    background-image: url("assets/wp10820005.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,20 +52,22 @@ a{
 
 h3 {
     text-align: center;
-   color: green;
+   color: black;
    font-size: 90px;
    margin: 30px;
-
+    opacity: 0.8;
 }
 
-li {
+ol {
     text-decoration: underline;
     text-align: center;
     color: white;
     font-size: 50px;
+    list-style-position: inside;
 }
 
 img {
+    border-radius: 20px;
     display: block;
     max-width: 7%;
     margin: 10px auto;
@@ -77,8 +79,9 @@ img {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: none;
     width: 100%;
+    
 }
 
 
@@ -90,6 +93,21 @@ input[type="text"] {
     outline: none;
 }
 
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
 
+.segunda-pagina {
+    background-image: url(assets/yone-splash-art-nn.jpg) ;
+}
 
+.pag3 {
+    background-color: cornflowerblue;
+}
+
+#pagina3 {
+    background-color: aliceblue;
+
+}
 
