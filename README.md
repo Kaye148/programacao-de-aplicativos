@@ -22,4 +22,4 @@ git branch
 
 ## Sair 
 
-gh logout
+gh auth logout
