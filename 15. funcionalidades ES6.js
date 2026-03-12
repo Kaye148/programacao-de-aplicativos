@@ -23,5 +23,7 @@ console.log (pares)
 console.log("\nSomando todos os números do vetor: ")
 const soma = listaDeNumeros.reduce((soma, atual) => soma + atual, 0)
 console.log(soma)
+// Como os antigos.
+console.log("\nExibindo todos os usúarios do vetor.")
 
 
