@@ -1,1 +1,122 @@
-/* RESET DE CONFIGURAÇÕES */
+/* Importando a fonte clássica de videogame */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive; /* Fonte Pixel Art */
+}
+
+body {
+    background-color: #ffc1e3; /* Rosa claro de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    image-rendering: pixelated;
+}
+
+.container {
+    background-color: #ffffff; /* Branco */
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+    border: 6px solid #000;
+    box-shadow: 12px 12px 0px #64b5f6; /* Sombra Azul em bloco (8-bit) */
+    position: relative;
+}
+
+/* Criando "orelhas de gato" no topo do container */
+.container::before, .container::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    width: 40px;
+    height: 20px;
+    background: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container::before { left: 20px; box-shadow: 0 -6px 0 #ffc1e3; } /* Orelha Esquerda */
+.container::after { right: 20px; box-shadow: 0 -6px 0 #ffc1e3; } /* Orelha Direita */
+
+.logo {
+    font-size: 18px;
+    color: #f06292; /* Rosa vibrante */
+    margin-bottom: 20px;
+    display: block;
+    border: 3px dashed #64b5f6;
+    padding: 10px;
+}
+
+/* Adicionando um gatinho pixelado no logotipo usando Emoji ou caracteres */
+.logo::before {
+    content: "ฅ^•ﻌ•^ฅ ";
+}
+
+h1 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 8px; /* Fontes pixeladas precisam ser pequenas ou muito grandes */
+    color: #2196f3; /* Azul */
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 4px solid #000;
+    background-color: #e3f2fd; /* Azul bem clarinho */
+    font-size: 12px;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: #f06292; /* Rosa */
+    color: #fff;
+    border: 4px solid #000;
+    border-bottom: 10px solid #ad1457; /* Profundidade 8-bit */
+    cursor: pointer;
+    font-size: 10px;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #f48fb1;
+    transform: translateY(-2px);
+    border-bottom-width: 12px;
+}
+
+button:active {
+    transform: translateY(4px);
+    border-bottom-width: 4px;
+}
+
+#resultadoFinal {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fce4ec;
+    border: 4px solid #64b5f6;
+    min-height: 50px;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilo para cada linha do resultado */
+.resultado-item {
+    display: block;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #fff;
+}
