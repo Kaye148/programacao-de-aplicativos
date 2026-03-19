@@ -1,50 +1,44 @@
-function somar(numero, numero) {
-    return numero + numero
+function mediar (n1, n2) {
+    return (n1 + n2) / 2
+
+}
+function somar (n1, n2) {
+    return n1 + n2
+
+}
+function produtor (n1, n2) {
+    return n1 * n2
+
+}
+function maior  (n1, n2) {
+    return n1 > n2
+
+}
+function menor (n1, n2) {
+    return n1 < n2
+
 }
 
-function (numero, numero) {
-    return numero * numero
+function resultadoDiv () {
+    const input1 = document.getElementById("numeroInput1");
+    const input2 = document.getElementById("numeroInput2");
+    const resultadoDiv = document.getElementById("resultadoDiv");
 }
 
-function dividir(numero, numero) {
-    return numero / numero
+let n1 = parseFloat (input1.value);
+let n2 = parseFloat (input2.value);
+
+resultadoDiv.innerHTML = "";
+
+if (isNaN(n1) || isNaN(n2)) {
+    resultadoDiv.innerHTML = "<p>digite númeors validos</p>"
 }
 
-const soma = (numero, numero)
+resultadoDiv.innerHTML +=`<p> Soma: ${somar(n1, n2)} </p>`
+resultadoDiv.innerHTML +=`<p> Soma: ${mediar(n1, n2)} </p>`
+resultadoDiv.innerHTML +=`<p> Soma: ${produtor(n1, n2)} </p>`
+resultadoDiv.innerHTML +=`<p> Soma: ${maior(n1, n2) ? "Sim" : "Não" } </p>`
+resultadoDiv.innerHTML +=`<p> Soma: ${menor(n1, n2) ? "Sim" : "Não"} </p>`
 
-function exibirResultado() {
-    const numeroInput = document.getElementById("numeroInput");
-    let numero = parseFloat(numeroInput.value);
-
-    const resultadoDiv = document.getElementById("exibirResultado");
-    resultadoDiv.innerHTML = "";
-
-    if (isNaN(numero) || numero ===null || numero === "") {
-        resultadoDiv.innerHTML = "<p> Por favor digite um número.</p>"
-        return;
-    }
-
-    resultadoDiv.innerHTML += `<h2> Média </h2>`
-    resultadoDiv.innerHTML += `<h2> Soma </h2>`
-    resultadoDiv.innerHTML += `<h2> produto </h2>`
-    resultadoDiv.innerHTML += `<h2> Maior </h2>`
-    resultadoDiv.innerHTML += `<h2> Menor </h2>`
-
-    let resultado = numero / numero
-    let resultado2 = numero + numero
-    let resultado3 = numero < numero
-    let resultado4 = numero > numero
-    let resultado5 = numero * numero
-
-    resultadoDiv.innerHTML +=`<p> ${numero} + ${numero} = ${resultado} </p>`
-    resultadoDiv.innerHTML +=`<p> ${numero} + ${numero} = ${resultado2} </p>`
-    resultadoDiv.innerHTML +=`<p> ${numero} + ${numero} = ${resultado3} </p>`
-    resultadoDiv.innerHTML +=`<p> ${numero} + ${numero} = ${resultado4} </p>`
-    resultadoDiv.innerHTML +=`<p> ${numero} + ${numero} = ${resultado5} </p>`
-}
-
-const botaoExibir = document.getElementById("btnExibir");
-botaoExibir.addEventListener("click", exibirResultado);
-
-
-
+const botao = document.getElementById("btnExibir");
+botao.addEventListener("click", resultadoDiv);
