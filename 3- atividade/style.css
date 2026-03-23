@@ -1,0 +1,86 @@
+/* 1. RESET & FUNDAÇÕES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Fonte sans-serif limpa e robusta */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; /* Estética marcante da YZY */
+    letter-spacing: -0.02em;
+}
+
+body {
+    background-color: #F5F5F5; /* Off-white */
+    color: #4169E1; /* Royal Blue principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* 2. CONTAINER PRINCIPAL */
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 3. ESTILIZAÇÃO DO LOGOTIPO "< \ ? />" */
+.logo {
+    font-size: 1.5rem; /* Tamanho ligeiramente maior que o título */
+    font-weight: 800; /* Extra bold para impacto visual */
+    letter-spacing: 0.1rem; /* Espaçamento extra para clareza dos caracteres */
+    margin-bottom: 0.5rem; /* Próximo ao título, mas com respiro */
+    color: #4169E1;
+}
+
+h1 {
+    font-size: 1rem; /* Título secundário em relação ao logo */
+    font-weight: 400; /* Mais leve que o logo */
+    margin-bottom: 3rem; /* Bastante espaço antes dos inputs (Yeezy style) */
+}
+
+/* 4. INPUTS ESTILIZADOS */
+input[type="number"] {
+    width: 100%;
+    padding: 18px; /* Maior área de toque e visual mais limpo */
+    margin-bottom: 12px;
+    border: 2px solid #4169E1;
+    background-color: transparent;
+    color: #4169E1;
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Placeholder em Royal Blue mas com opacidade menor */
+input[type="number"]::placeholder {
+    color: rgba(65, 105, 225, 0.6);
+}
+
+/* Efeito de foco: inversão minimalista */
+input[type="number"]:focus {
+    background-color: #4169E1;
+    color: #F5F5F5;
+}
+
+/* Remove as setas padrão do input number (cross-browser) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Para Firefox */
+}
+
+/* 5. ÁREA DE RESULTADO */
+#resultadosMedia {
+    margin-top: 2.5rem;
+    font-size: 3.5rem; /* Resultado gigante para destaque total */
+    font-weight: 900;
+    color: #4169E1;
+    letter-spacing: -0.05em;
+}
